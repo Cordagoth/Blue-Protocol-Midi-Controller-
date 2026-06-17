@@ -28,28 +28,25 @@ packaging method plus the fact that this app legitimately asks for
 administrator rights and sends keystrokes, which pattern-matches to things
 scanners treat as suspicious.
 
-You do not have to take that on faith. You can:
+You can:
 - Read the full source in this repo (it is short).
 - Build the `.exe` yourself from that source (see below) so you never run a
   file you didn't make.
 - Check the published SHA-256 hash to confirm your download matches the
   official build.
 
-The major engines (Microsoft Defender, etc.) come back clean; the flags are
-from smaller heuristic/AI scanners.
-
+The major engines (Microsoft Defender, etc.) come back clean
 ## Important: game terms of service
 
 Automation and third-party input tools may violate the game's Terms of
 Service, **even though this tool only sends keystrokes and reads nothing**.
 Using it could put your game account at risk of suspension or other action.
-Use it at your own risk. You are responsible for your own account. The
-authors provide this software with no warranty (see LICENSE).
+Use it at your own risk. You are responsible for your own account.
 
 ## Using a prebuilt download
 
 1. Download `BlueProtocolPlayer.exe` from the official Releases page.
-2. Verify its hash (see below). This is optional but recommended.
+2. Verify its hash (This is optional)
 3. Double-click it. It is the whole program; nothing to install.
 4. When Windows asks for administrator permission, allow it. The game ignores
    keystrokes from a program that isn't running as administrator.
@@ -84,7 +81,6 @@ username from leftover paths inside the `.exe`.
 
 - **F9** - stop
 - **F10** - pause / resume
-- Or move the mouse into the top-left corner of the screen to abort.
 
 ## What's in this repository
 
@@ -98,6 +94,3 @@ username from leftover paths inside the `.exe`.
 - `test_engine.py` - automated tests for the engine
 - `LICENSE` - MIT license
 
-## License
-
-MIT. See LICENSE. Provided "as is", without warranty of any kind.

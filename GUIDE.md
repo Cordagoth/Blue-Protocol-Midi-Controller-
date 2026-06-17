@@ -68,7 +68,7 @@ machine-perfect. Higher = looser. Purely cosmetic to the ear.
 before the song starts, giving you time to click into the game.
 
 **Imprecision** (off to 8% per note, default off) - occasionally plays a
-brief wrong note and corrects it, like a real player fumbling. Cosmetic;
+brief wrong note and corrects it. Cosmetic;
 leave at off for clean playback.
 
 ## Live input (play a MIDI keyboard)
@@ -84,8 +84,6 @@ directly instead of loading a file.
   automatically; just play. A sustain pedal works too. Press Stop or F9 to
   end.
 
-Live mode needs the `python-rtmidi` package, which the prebuilt program
-already includes.
 
 ## Tips
 

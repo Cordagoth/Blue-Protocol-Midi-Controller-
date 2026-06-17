@@ -28,23 +28,20 @@ packaging method plus the fact that this app legitimately asks for
 administrator rights and sends keystrokes, which pattern-matches to things
 scanners treat as suspicious.
 
-You do not have to take that on faith. You can:
-- Read the full source in this repo (it is short).
+You can:
+- Read the full source in this repo
 - Build the `.exe` yourself from that source (see below) so you never run a
   file you didn't make.
 - Check the published SHA-256 hash to confirm your download matches the
   official build.
 
-The major engines (Microsoft Defender, etc.) come back clean; the flags are
-from smaller heuristic/AI scanners.
-
+The major engines (Microsoft Defender, etc.) come back clean
 ## Important: game terms of service
 
 Automation and third-party input tools may violate the game's Terms of
 Service, **even though this tool only sends keystrokes and reads nothing**.
 Using it could put your game account at risk of suspension or other action.
-Use it at your own risk. You are responsible for your own account. The
-authors provide this software with no warranty (see LICENSE).
+Use it at your own risk. You are responsible for your own account.
 
 ## Using a prebuilt download
 
@@ -161,16 +158,3 @@ three octaves at once. With **Stable octave** on, the odd far-out note is
 shifted into reach instead of causing the octave to flip back and forth.
 That keeps playback steady at the cost of a few notes' octaves. Turn it off
 if you'd rather have exact octaves and don't mind the occasional flicker.
-
-#### Is this against the game's rules?
-
-It may be. Automation and third-party input tools can violate a game's Terms
-of Service even though this one only sends keystrokes and reads nothing.
-Using it could put your account at risk. Use it at your own risk.
-
-#### Can I trust the download?
-
-You don't have to take it on faith. The full source is in the repository, so
-you can read exactly what it does or build it yourself. Each official release
-lists the file's SHA-256 hash so you can confirm your download matches. Only
-download from the official repository.

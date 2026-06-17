@@ -81,7 +81,6 @@ username from leftover paths inside the `.exe`.
 
 - **F9** - stop
 - **F10** - pause / resume
-- Or move the mouse into the top-left corner of the screen to abort.
 
 ## What's in this repository
 

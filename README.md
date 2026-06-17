@@ -94,3 +94,79 @@ username from leftover paths inside the `.exe`.
 - `test_engine.py` - automated tests for the engine
 - `LICENSE` - MIT license
 
+## FAQ
+
+FAQ - common issues
+
+Nothing happens in the game when I press Play
+
+Almost always one of these:
+
+
+You didn't allow administrator. The game ignores keystrokes from a
+program that isn't running as administrator. When Windows shows the
+permission prompt at launch, click Yes. If you clicked No, close the app
+and reopen it.
+The game window isn't focused. After pressing Play, click into the game
+during the countdown so it receives the notes.
+
+
+"Windows protected your PC" popup appears
+
+That's SmartScreen, and it shows up for almost any new program that isn't
+signed with a paid certificate. Click More info, then Run anyway. It
+only nags the first time.
+
+My antivirus flagged it
+
+This is a known false positive that affects most programs built with
+PyInstaller, made more likely because this app asks for admin and sends
+keystrokes. If you're unsure, you can read the full source and build it
+yourself from the repository, or check the download's hash against the one
+on the official release. Allow or whitelist the file in your antivirus.
+
+Live mode can't find my MIDI keyboard
+
+In order, try:
+
+
+Press the Rescan button (it scans again for newly connected devices).
+Unplug the keyboard and plug it back in, then press Rescan. USB-MIDI
+devices sometimes drop off Windows' device list, and replugging brings
+them back. This fixes it most of the time.
+Close any other music program (a DAW, a browser MIDI tab) that might be
+holding the keyboard.
+Try a different USB port or cable. Some cheap cables are charge-only and
+carry no data.
+Reboot. This clears most flaky USB-MIDI issues.
+
+
+A song sounds wrong / too high / too low
+
+
+Click the Suggest button next to Transpose. It picks the shift that
+fits the most notes on the instrument.
+If fast parts drop notes, lower the Speed slider a little.
+If a song jumps wildly between low and high and sounds glitchy, turn on
+Stable octave.
+If a busy song sounds cluttered, try Melody only.
+
+
+It says the file is damaged or isn't a MIDI file
+
+The file you picked isn't a valid .mid. A file renamed to .mid (like an
+.mp3) won't work; it has to actually be a MIDI file. Try a different song.
+
+Some notes play in the wrong octave
+
+On songs that span a very wide range, the instrument can only reach about
+three octaves at once. With Stable octave on, the odd far-out note is
+shifted into reach instead of causing the octave to flip back and forth.
+That keeps playback steady at the cost of a few notes' octaves. Turn it off
+if you'd rather have exact octaves and don't mind the occasional flicker.
+
+Is this against the game's rules?
+
+It may be. Automation and third-party input tools can violate a game's Terms
+of Service even though this one only sends keystrokes and reads nothing.
+Using it could put your account at risk. Use it at your own risk.
